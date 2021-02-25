@@ -25,13 +25,12 @@ html {
   font-family: 'Lato', san-sarif; }
 
 body {
-  background-color: #eb2f64;
   color: var(--gray-dark-1); }
 
 .header {
   height: 7rem;
   background-color: white;
-  border-bottom: var(--gray-light-3);
+  border-bottom: 1px solid var(--gray-light-3);
   font-size: 1.4rem;
   display: flex;
   justify-content: space-between;
@@ -172,3 +171,63 @@ body {
   color: var(--gray-light-4);
   text-align: center;
   padding: 2rem; }
+
+.gallery {
+  display: flex; }
+  .gallery__img {
+    width: 100%;
+    display: block; }
+
+.overview {
+  display: flex;
+  border-bottom: 1px solid var(--gray-light-3); }
+  .overview__heading {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 300;
+    padding: 1.5rem 3rem;
+    letter-spacing: 1px; }
+  .overview__stars {
+    margin-right: auto;
+    display: flex;
+    align-items: center; }
+  .overview__icon-star, .overview__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-pink); }
+  .overview__location {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    margin-right: 2rem; }
+  .overview__rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-pink);
+    color: var(--gray-light-1);
+    padding: 0.5rem 1rem;
+    align-self: stretch; }
+  .overview__rating-avg {
+    font-size: 1.7rem; }
+  .overview__rating-count {
+    font-size: 1rem;
+    text-transform: uppercase; }
+
+.btn-inline {
+  border: none;
+  color: var(--color-pink);
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  display: inline-block;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s; }
+  .btn-inline:hover {
+    color: var(--gray-dark-1);
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25); }
+  .btn-inline:focus {
+    outline: none; }
