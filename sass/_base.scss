@@ -11,6 +11,10 @@
 	--gray-dark-1: #333;
 	--gray-dark-2: #777;
 	--gray-dark-3: #999;
+
+	--line: 1px solid var(--gray-light-3);
+
+	--shadow-light: 0 2rem 5rem rgba(0,0,0,0.2);
 }
 
 * {
