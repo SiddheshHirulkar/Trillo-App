@@ -17,6 +17,11 @@
 	--shadow-light: 0 2rem 5rem rgba(0,0,0,0.2);
 }
 
+$bp-large: 68.75em; //1100px
+$bp-medium: 56.25em; //900px
+$bp-small: 37.5em; //600px
+$bp-smallest: 31.25em; //500px;
+
 * {
 	padding: 0;
 	margin: 0;
@@ -32,6 +37,10 @@ html {
 	box-sizing: border-box;
 	font-size: 62.5%; // 1rem = 10px default font-size is 10px hence 62.5% = 10px
 	font-family: 'Lato', san-sarif;
+
+	@media only screen and (max-width: $bp-large) {
+		font-size: 50%;
+	}
 }
 
 body {
